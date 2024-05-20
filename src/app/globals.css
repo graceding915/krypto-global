@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* border animate */
+@keyframes borderColorChange {
+  0% {
+    border-color: #eff3f6;
+    background-position: 0 0;
+  }
+  100% {
+    border-color: #d6dde2;
+    background-position: 100% 0;
+  }
+}
+
+.border-animate {
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid #eff3f6;
+  border-right: 1px solid #eff3f6;
+}
+
+.border-animate::before,
+.border-animate::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background: linear-gradient(to right, #eff3f6 50%, #d6dde2 50%);
+  background-size: 200% 100%;
+  pointer-events: none;
+  transition: background-position 1s;
+}
+
+.border-animate::before {
+  top: 0;
+}
+
+.border-animate::after {
+  bottom: 0;
+}
+
+.border-animate:hover::before,
+.border-animate:hover::after {
+  background-position: -100% 0;
+}
+
+/* card */
+.card {
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.card:hover {
+  transform: scale(0.95); /* Scale down to 85% on hover */
+}
