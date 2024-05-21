@@ -15,7 +15,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between w-full mt-[32px] md:mt-0">
 
       {/* Section 1 */}
-      <div className="flex flex-row items-center w-full min-h-screen px-10 md:px-12">
+      <div className="flex flex-row items-center w-full min-h-screen px-6 md:px-12">
         <div className="flex flex-col gap-[32px]">
           <div className="flex flex-col gap-[16px]">
             <p className="block md:hidden text-[48px] leading-[3.6rem]">
@@ -45,13 +45,13 @@ export default function Home() {
       </div>
       
       {/* Section 2 */}
-      <div ref={servicesRef} className="flex flex-col justify-between w-full h-fit gap-[80px] px-12 pt-[80px] pb-[140px] bg-white">
+      <div ref={servicesRef} className="flex flex-col justify-between w-full h-fit gap-[80px] px-6 md:px-12 pt-[80px] pb-[140px] bg-white">
         <div className="flex flex-col gap-[24px] w-full">
           <div className="w-[56px] h-[2px] bg-[#d6dde2]" />
           <p className="text-[38px] text-black font-medium">Services</p>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-[24px] w-full">
-          <div className="card flex-1 flex flex-col w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
+          <div className="card flex-1 flex flex-col w-full md:w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
             <div>
               <p className="text-[10px] text-[#6e7f8b] tracking-[0.2rem]">01</p>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
               <p className="text-[14px] text-[#6e7f8b]">Expertise in searching for and analyzing projects to find promising ones.</p>
             </div>
           </div>
-          <div className="card flex-1 flex flex-col w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
+          <div className="card flex-1 flex flex-col w-full md:w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
             <div>
               <p className="text-[10px] text-[#6e7f8b] tracking-[0.2rem]">02</p>
             </div>
@@ -69,7 +69,7 @@ export default function Home() {
               <p className="text-[14px] text-[#6e7f8b]">Expertise in strategy, portfolio construction, and generating stable returns</p>
             </div>
           </div>
-          <div className="card flex-1 flex flex-col w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
+          <div className="card flex-1 flex flex-col w-full md:w-[380px] min-h-[280px] p-[36px] border-animate justify-between">
             <div>
               <p className="text-[10px] text-[#6e7f8b] tracking-[0.2rem]">03</p>
             </div>
@@ -83,11 +83,11 @@ export default function Home() {
 
       {/* Section 3 */}
       <div className="flex flex-col items-center gap-[80px] w-full h-fit pt-[80px] pb-[140px] bg-black">
-        <div className="flex flex-col gap-[24px] px-12 w-full">
+        <div className="flex flex-col gap-[24px] px-6 md:px-12 w-full">
           <div className="w-[56px] h-[2px] bg-[#eff3f6]" />
           <p className="text-[38px] text-white font-medium">Portfolio</p>
         </div>
-        <div className="flex flex-col items-center gap-[24px] px-12 w-full">
+        <div className="flex flex-col items-center gap-[24px] px-6 md:px-12 w-full">
           <p className="text-center">{`"I will tell you how to become rich. Be fearful when others are greedy. Be greedy when others are fearful."`}</p>
           <div className="flex flex-row items-center gap-[24px]">
             <div className="flex flex-row justify-center items-center w-[42px] h-[42px] border-[1px] border-[rgba(255,255,255,.3)] rounded-full">
@@ -102,7 +102,7 @@ export default function Home() {
       </div>
     
       {/* Section 4 */}
-      <div ref={partnersRef} className="flex flex-col items-center gap-[80px] w-full h-fit px-12 pt-[80px] pb-[140px] bg-white">
+      <div ref={partnersRef} className="flex flex-col items-center gap-[80px] w-full h-fit px-6 md:px-12 pt-[80px] pb-[140px] bg-white">
         <div className="flex flex-col gap-[24px] w-full">
           <div className="w-[56px] h-[2px] bg-[#d6dde2]" />
           <p className="text-[38px] text-black font-medium">Partners</p>
@@ -139,7 +139,7 @@ export default function Home() {
       </div>
 
       {/* Section 5 */}
-      <div className="flex flex-col justify-between w-full h-[640px] px-12 pt-[80px] pb-[140px] bg-black">
+      <div className="flex flex-col justify-between w-full h-[640px] px-6 md:px-12 pt-[80px] pb-[140px] bg-black">
         <div className="flex flex-col gap-[24px] w-full">
           <div className="w-[56px] h-[2px] bg-[#eff3f6]" />
           <p className="text-[38px] text-white font-medium">Advisors</p>
@@ -149,7 +149,7 @@ export default function Home() {
       </div>
 
       {/* Section 6 */}
-      <div ref={brandAndLogoRef} className="flex flex-col justify-between gap-[80px] w-full h-fit px-12 pt-[80px] pb-[140px] bg-[#f9f9f9]">
+      <div ref={brandAndLogoRef} className="flex flex-col justify-between gap-[80px] w-full h-fit px-6 md:px-12 pt-[80px] pb-[140px] bg-[#f9f9f9]">
         <div className="flex flex-col gap-[24px] w-full">
           <div className="w-[56px] h-[2px] bg-[#d6dde2]" />
           <p className="text-[38px] text-black font-medium">Brand & Logo</p>
@@ -177,7 +177,7 @@ export default function Home() {
       </div>
 
       {/* Section 7 */}
-      <div ref={contactRef} className="flex flex-col justify-between items-center gap-[45px] w-full px-12 pt-[80px] pb-[140px] bg-black">
+      <div ref={contactRef} className="flex flex-col justify-between items-center gap-[45px] w-full px-6 md:px-12 pt-[80px] pb-[140px] bg-black">
         <ContactForm />
       </div>
     </main>

@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FootBar from "@/components/FoorBar";
 import { ScrollProvider } from "@/components/ScrollProvider";
+import FloatingButton from "@/components/FloatingButton";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <FootBar />
+          <FloatingButton />
         </ScrollProvider>
       </body>
     </html>

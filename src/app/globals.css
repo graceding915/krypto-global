@@ -24,6 +24,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
+  -ms-overflow-style: none; /* IE and Edge */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
 }
 
 @layer utilities {
@@ -42,6 +48,11 @@ body {
     border-color: #d6dde2;
     background-position: 100% 0;
   }
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari on iOS */
 }
 
 .border-animate {

@@ -11,6 +11,7 @@ type ScrollContextType = {
   scrollToPartners: () => void;
   scrollToBrandAndLogo: () => void;
   scrollToContact: () => void;
+  scrollToTop: () => void;
 };
 
 const ScrollContext = createContext<ScrollContextType | null>(null);
@@ -45,8 +46,14 @@ export const ScrollProvider = ({ children }: { children: React.ReactNode}) => {
     }, 100); // Adding a 100ms delay
   }, []);
 
+  const scrollToTop = useCallback(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); // Adding a 100ms delay
+  }, []);
+
   return (
-    <ScrollContext.Provider value={{ servicesRef, partnersRef, brandAndLogoRef, contactRef, scrollToServices, scrollToPartners, scrollToBrandAndLogo, scrollToContact }}>
+    <ScrollContext.Provider value={{ servicesRef, partnersRef, brandAndLogoRef, contactRef, scrollToServices, scrollToPartners, scrollToBrandAndLogo, scrollToContact, scrollToTop }}>
       {children}
     </ScrollContext.Provider>
   );
