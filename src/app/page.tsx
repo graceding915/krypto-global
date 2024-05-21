@@ -15,7 +15,8 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between w-full mt-[32px] md:mt-0">
 
       {/* Section 1 */}
-      <div className="flex flex-row items-center w-full min-h-screen px-6 md:px-12">
+      <div className="relative flex flex-row items-center w-full min-h-screen px-6 md:px-12">
+        <Image className="z-[-1] opacity-75" src="/images/bg-wallpaper3.jpg" layout="fill" objectFit="cover" alt="Background"/>
         <div className="flex flex-col gap-[32px]">
           <div className="flex flex-col gap-[16px]">
             <p className="block md:hidden text-[48px] leading-[3.6rem]">
@@ -82,7 +83,8 @@ export default function Home() {
       </div>
 
       {/* Section 3 */}
-      <div className="flex flex-col items-center gap-[80px] w-full h-fit pt-[80px] pb-[140px] bg-black">
+      <div className="relative flex flex-col items-center gap-[80px] w-full h-fit pt-[80px] pb-[140px]">
+        <Image className="z-[-1] opacity-35" src="/images/bg-wallpaper15.jpg" layout="fill" objectFit="cover" alt="Background"/>
         <div className="flex flex-col gap-[24px] px-6 md:px-12 w-full">
           <div className="w-[56px] h-[2px] bg-[#eff3f6]" />
           <p className="text-[38px] text-white font-medium">Portfolio</p>
@@ -139,7 +141,8 @@ export default function Home() {
       </div>
 
       {/* Section 5 */}
-      <div className="flex flex-col justify-between w-full h-[640px] px-6 md:px-12 pt-[80px] pb-[140px] bg-black">
+      <div className="relative flex flex-col justify-between w-full h-[640px] px-6 md:px-12 pt-[80px] pb-[140px]">
+        <Image className="z-[-1] opacity-35" src="/images/bg-wallpaper7.jpg" layout="fill" objectFit="cover" alt="Background"/>
         <div className="flex flex-col gap-[24px] w-full">
           <div className="w-[56px] h-[2px] bg-[#eff3f6]" />
           <p className="text-[38px] text-white font-medium">Advisors</p>
@@ -177,7 +180,8 @@ export default function Home() {
       </div>
 
       {/* Section 7 */}
-      <div ref={contactRef} className="flex flex-col justify-between items-center gap-[45px] w-full px-6 md:px-12 pt-[80px] pb-[140px] bg-black">
+      <div ref={contactRef} className="relative flex flex-col justify-between items-center gap-[45px] w-full px-6 md:px-12 pt-[80px] pb-[140px]">
+        <Image className="z-[-1] opacity-65" src="/images/bg-wallpaper2.jpg" layout="fill" objectFit="cover" alt="Background"/>
         <ContactForm />
       </div>
     </main>
