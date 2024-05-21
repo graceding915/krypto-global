@@ -12,7 +12,7 @@ export default function Home() {
   const { servicesRef, partnersRef, brandAndLogoRef, contactRef, scrollToContact } = useScroll();
 
   return (
-    <main className="flex flex-col items-center justify-between w-full mt-[32px] md:mt-0">
+    <main className="flex flex-col items-center justify-between w-full">
 
       {/* Section 1 */}
       <div className="relative flex flex-row items-center w-full min-h-screen px-6 md:px-12">
